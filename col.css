@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    min-height: 100vh;
+    background: linear-gradient(to right top,rgba(211,172,255),rgba(145,238,255));
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.glass{
+    min-height: 60vh;
+    width: 60%;
+    background: linear-gradient(to right top,rgba(255,255,255,0.6),rgba(255,255,255,0.2));
+    border-radius: 2rem;
+    align-items: initial;
+    display: flex;
+    flex-direction: column;
+}
+.dashboard{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: linear-gradient(rgba(255,255,255,0.9),rgba(255,255,255,0.3));
+    width: 100%;
+    height: 10%;
+    border-radius: 2rem;
+    text-align: center;
+    padding: 2vh;
+}
+.contact{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.facebook{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: rgb(145, 207, 234);
+}
+.facebook a{
+    color: rgb(145, 207, 234);
+}
+.facebook a:hover{
+    color: rgb(184, 158, 219);
+}
+.card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.skill{
+    background: linear-gradient(to right top,rgb(255,255,255,1),rgb(255,255,255,0.2));
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    min-width: 25vh;
+    min-height: 35vh;
+    margin: 0rem 0rem 2rem;
+    box-shadow: 6px 6px 20px rgba(122,122,122,0.2);
+}
+.skill:hover{
+    transform: scale(1.1);
+}
+.AS{
+    text-align: center;
+    font-size: 40px;
+    color: rgb(152, 150, 213);
+}
+.ASD{
+    margin: 1rem;
+}
+.icc{
+    border-radius: 50%;
+}
+.user{
+    margin: 0rem 0rem 2rem;
+    color: rgba(112, 156, 227);
+}
+.user h2{
+    color: rgb(152, 150, 213);
+}
