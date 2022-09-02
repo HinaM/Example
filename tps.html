@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./tps.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <div class="circle">
+
+        </div>
+        <header>
+            <img class="logo" src="./img/youtube.png" alt="">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>It's <span id="cd">TPS</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati nihil, excepturi sunt doloremque et aperiam aspernatur accusamus, repellendus iusto, soluta eligendi? Ipsum maiores quae ea debitis perferendis sint tempora autem.</p>
+                <a href="#" id="cd1">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img class="img_noback" src="./img/TPS無背景.PNG" alt="" height="500px">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li onclick="imgSlider('./img/TPS無背景.PNG');changecolor('#fcd9ce');changecolor1('#fcd9ce');changeword('TPS')">TPS</li>
+            <li onclick="imgSlider('./img/TPS無背景.PNG');changecolor('#523f61');changecolor1('#523f61');changeword('NIA')">NIA</li>
+            <li onclick="imgSlider('./img/1662146323407.PNG');changecolor('#a29398');changecolor1('#a29398');changeword('MSK')">MSK</li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="./img/facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="./img/facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="./img/facebook.png" alt=""></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.img_noback').src=anything;
+        }
+        function changecolor(color){
+            const circle=document.querySelector('.circle');
+            circle.style.background=color;
+        }
+        function changecolor1(color1){
+            const circle=document.querySelector('.cd');
+            document.getElementById("cd").style.color=color1;
+            document.getElementById("cd1").style.background=color1;
+        }
+        function changeword(word){
+            document.getElementById("cd").textContent=word;
+        }
+    </script>
+</body>
+</html>
